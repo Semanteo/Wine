@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Vins</string>
+
+    <!-- Page d'accueil -->
+    <string name="home_page_title">A découvrir</string>
+    <string name="home_page_last_wines_section">Derniers vins</string>
+    <!-- Barre de navigation -->
+    <string name="bottom_home_item">Accueil</string>
+    <string name="bottom_collection_item">Cave</string>
+    <string name="bottom_add_wine_item">Ajouter</string>
+    
+    
+    <!-- Page de Collection -->
+    <string name="collection_page_title">Ma cave</string>
+
+    <!-- Page d'ajout  -->
+    <string name="add_page_title">Ajout d\'un vin</string>
+    <string name="add_page_upload_button">Charger image</string>
+    <string name="add_page_name_input">@string/item_wine_name</string>
+    <string name="add_page_appellation_input">@string/item_wine_appellation</string>
+    
+    <string-array name="add_wine_page_type_input">
+        <item>Rouge</item>
+        <item>Blanc</item>
+        <item>Rosé</item>
+    </string-array>
+
+    <string-array name="add_wine_page_year_input">
+        <item>2021</item>
+        <item>2020</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+    </string-array>
+
+    <string-array name="add_wine_page_number_input">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+    <string name="add_page_confirm_button">Ajouter</string>
+
+    <!-- Wine popup -->
+    <string name="popup_wine_name">Wine name</string>
+    <string name="popup_wine_description_title">Appellation</string>
+    <string name="popup_wine_description_subtitle">Appellation</string>
+    <string name="popup_wine_type_title">Type</string>
+    <string name="popup_wine_type_subtitle">Rouge</string>
+    <string name="popup_wine_year_title">Année</string>
+    <string name="popup_wine_year_subtitle">2021</string>
+    <string name="popup_wine_number_title">Quantité</string>
+    <string name="popup_wine_number_subtitle">1</string>
+    <!-- Wine customize -->
+    <string name="item_wine_name">Nom du vin</string>
+    <string name="item_wine_appellation">Appellation du vin</string>
+
+
+</resources>

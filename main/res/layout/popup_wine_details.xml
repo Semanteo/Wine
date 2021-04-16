@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="600dp"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/trending1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popup_wine_name"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_wine_name"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/popup_wine_description_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_wine_description_title"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_name" />
+
+    <TextView
+        android:id="@+id/popup_wine_description_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_wine_description_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_description_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_description_title" />
+
+    <TextView
+        android:id="@+id/popup_wine_type_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_wine_type_title"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_description_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_description_subtitle"/>
+
+    <TextView
+        android:id="@+id/popup_wine_type_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_wine_type_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_type_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_type_title" />
+
+    <TextView
+        android:id="@+id/popup_wine_year_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_wine_year_title"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_type_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_type_subtitle" />
+
+    <TextView
+        android:id="@+id/popup_wine_year_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_wine_year_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_year_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_year_title" />
+
+    <TextView
+        android:id="@+id/popup_wine_number_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/popup_wine_number_title"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_year_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_year_subtitle" />
+
+    <TextView
+        android:id="@+id/popup_wine_number_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_wine_number_subtitle"
+        app:layout_constraintStart_toStartOf="@+id/popup_wine_number_title"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_number_title" />
+
+    <View
+        android:id="@+id/view_separation"
+        android:layout_width="1dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popup_wine_number_subtitle" />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_trash"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+
+    <ImageView
+        android:id="@+id/star_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_unlike"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintStart_toEndOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+
+    <ImageView
+        android:id="@+id/wine_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_unwine"
+        app:layout_constraintBottom_toBottomOf="@+id/close_button"
+        app:layout_constraintEnd_toStartOf="@+id/close_button"
+        app:layout_constraintStart_toEndOf="@+id/cardView2"
+        app:layout_constraintTop_toTopOf="@+id/close_button"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
