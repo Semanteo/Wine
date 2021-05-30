@@ -15,5 +15,9 @@
         android:id="@+id/add_wine_page"
         android:title="@string/bottom_add_wine_item"
         android:icon="@drawable/ic_plus"/>
+    <item
+        android:id="@+id/about_page"
+        android:title="@string/bottom_about_item"
+        android:icon="@drawable/ic_about"/>
 
 </menu>

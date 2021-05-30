@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationItemView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import fr.semanteo.myapplication.fragments.AboutFragment
 import fr.semanteo.myapplication.fragments.AddPlantFragment
 import fr.semanteo.myapplication.fragments.CollectionFragment
 import fr.semanteo.myapplication.fragments.HomeFragment
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.add_wine_page -> {
                     loadFragment(AddPlantFragment(this), R.string.add_page_title)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.about_page -> {
+                    loadFragment(AboutFragment(this), R.string.about_page_title)
                     return@setOnNavigationItemSelectedListener true
                 }
                 else -> false

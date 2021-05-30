@@ -45,8 +45,8 @@ class AddPlantFragment(private val context: MainActivity): Fragment() {
             val wineName = view.findViewById<EditText>(R.id.name_input).text.toString()
             val wineAppellation = view.findViewById<EditText>(R.id.appellation_input).text.toString()
             val type = view.findViewById<Spinner>(R.id.type_spinner).selectedItem.toString()
-            val year = view.findViewById<Spinner>(R.id.year_spinner).selectedItem.toString()
-            val number = view.findViewById<Spinner>(R.id.number_spinner).selectedItem.toString()
+            val year = view.findViewById<Spinner>(R.id.year_spinner).selectedItem.toString().toInt()
+            val number = view.findViewById<Spinner>(R.id.number_spinner).selectedItem.toString().toInt()
             val downloadImageUrl = downloadUri
 
             val plant = PlantModel(
@@ -54,10 +54,10 @@ class AddPlantFragment(private val context: MainActivity): Fragment() {
                 wineName,
                 wineAppellation,
                 downloadImageUrl.toString(),
-                "\"" + year + "\"",
+                year,
                 type,
                 false,
-                "\"" + number + "\"",
+                number,
                 false
             )
 
@@ -83,5 +83,4 @@ class AddPlantFragment(private val context: MainActivity): Fragment() {
             uploadedImage?.setImageURI(file)
         }
     }
-
 }

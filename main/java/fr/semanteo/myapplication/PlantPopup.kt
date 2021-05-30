@@ -91,9 +91,9 @@ class PlantPopup(private val adapter: PlantAdapter, private val currentPlant: Pl
 
         findViewById<TextView>(R.id.popup_wine_type_subtitle).text = currentPlant.type
 
-        findViewById<TextView>(R.id.popup_wine_year_subtitle).text = currentPlant.year
+        findViewById<TextView>(R.id.popup_wine_year_subtitle).text = currentPlant.year.toString()
 
-        findViewById<TextView>(R.id.popup_wine_number_subtitle).text = currentPlant.number
+        findViewById<TextView>(R.id.popup_wine_number_subtitle).text = currentPlant.number.toString()
     }
 
 }

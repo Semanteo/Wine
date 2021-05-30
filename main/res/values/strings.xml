@@ -8,6 +8,7 @@
     <string name="bottom_home_item">Accueil</string>
     <string name="bottom_collection_item">Cave</string>
     <string name="bottom_add_wine_item">Ajouter</string>
+    <string name="bottom_about_item">About</string>
     
     
     <!-- Page de Collection -->
@@ -15,7 +16,7 @@
 
     <!-- Page d'ajout  -->
     <string name="add_page_title">Ajout d\'un vin</string>
-    <string name="add_page_upload_button">Charger image</string>
+    <string name="add_page_upload_button">Charger une image</string>
     <string name="add_page_name_input">@string/item_wine_name</string>
     <string name="add_page_appellation_input">@string/item_wine_appellation</string>
     
@@ -39,6 +40,15 @@
         <item>2011</item>
         <item>2010</item>
         <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
     </string-array>
 
     <string-array name="add_wine_page_number_input">
@@ -56,6 +66,7 @@
         <item>11</item>
         <item>12</item>
         <item>13</item>
+        <item>14</item>
     </string-array>
 
     <string name="add_page_confirm_button">Ajouter</string>
@@ -74,5 +85,14 @@
     <string name="item_wine_name">Nom du vin</string>
     <string name="item_wine_appellation">Appellation du vin</string>
 
+    <!-- Page de Crédits -->
+    <string name="about_page_title">About</string>
+    <string name="about_page_subtitle">Wine by Siméon Lemoine</string>
+    <string name="about_page_first">Application créée dans le but de recenser une cave</string>
+    <string name="about_page_dev">Développeur : Siméon Lemoine</string>
+    <string name="about_page_version">Version : 0.2</string>
+    <string name="about_page_name">Nom : Vins</string>
+    <string name="about_page_lastmod">Dernière modification : 30/05/2021</string>
+    <string name="about_page_git">Github</string>
 
 </resources>
