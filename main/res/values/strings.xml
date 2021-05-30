@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Vins</string>
+    <string name="app_version">0.2</string>
+    <string name="app_dev">Siméon Lemoine</string>
+    <string name="app_last">30/05/2021</string>
 
     <!-- Page d'accueil -->
     <string name="home_page_title">A découvrir</string>
@@ -70,7 +73,6 @@
     </string-array>
 
     <string name="add_page_confirm_button">Ajouter</string>
-
     <!-- Wine popup -->
     <string name="popup_wine_name">Wine name</string>
     <string name="popup_wine_description_title">Appellation</string>
@@ -87,12 +89,7 @@
 
     <!-- Page de Crédits -->
     <string name="about_page_title">About</string>
-    <string name="about_page_subtitle">Wine by Siméon Lemoine</string>
     <string name="about_page_first">Application créée dans le but de recenser une cave</string>
-    <string name="about_page_dev">Développeur : Siméon Lemoine</string>
-    <string name="about_page_version">Version : 0.2</string>
-    <string name="about_page_name">Nom : Vins</string>
-    <string name="about_page_lastmod">Dernière modification : 30/05/2021</string>
-    <string name="about_page_git">Github</string>
+    <string name="about_page_git"><u>Github</u></string>
 
 </resources>

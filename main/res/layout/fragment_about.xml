@@ -14,7 +14,6 @@
         style="@style/TitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_page_subtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +31,6 @@
         style="@style/DefaultTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_page_name"
         app:layout_constraintBottom_toTopOf="@+id/about_dev"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -41,13 +39,12 @@
         style="@style/DefaultTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_page_dev"
         app:layout_constraintBottom_toTopOf="@+id/about_git"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/about_git"
-        style="@style/DefaultTextStyle"
+        style="@style/LinkTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autoLink="web"
@@ -60,7 +57,6 @@
         style="@style/DefaultTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_page_version"
         app:layout_constraintBottom_toTopOf="@+id/about_date"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -69,7 +65,6 @@
         style="@style/DefaultTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_page_lastmod"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="@dimen/item_margin"/>
