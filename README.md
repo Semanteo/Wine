@@ -1,5 +1,3 @@
 # Wine
 
-```js
-console.log("C'est stylé");
-```
+Application pour gérer sa cave à vin sous Android
